@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF=8">
+
+    <body>
+        <p>
+            <label>Fahrenheit</label>
+            <!--define a numberbox & make an id and define what's number is in box to js -->
+            <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+            oninput="temperatureConverter1(this.value)"
+            onchange="temperatureConverter1(this.value)">
+         </p>
+         <!--the result of converting from fahrenheit to celsius-->
+             <p>Celsius: <span id="outputCelsius"></span></p> 
+
+        <p>
+            <label>Celsius</label>
+            <!--define a numberbox & make an id and define what's number is in box to js -->
+            <input id="inputcelsius" type="number" placeholder="Celsius"
+            oninput="temperatureConverter2(this.value)"
+            onchange="temperatureConverter2(this.value)">
+        </p>
+        <!--the result of converting from celsius to fahrenheit-->
+        <p>Fahrenheit: <span id="outputFahrenheit"></span></p> 
+
+  </body>
+    <script src="./js/temp.js"></script>
+  </html>

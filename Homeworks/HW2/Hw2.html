@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<title>HW2</title>
+<meta charset="UTF-8">
+<header>
+<h1>home work 2</h1>
+
+</header>
+<body>
+    Dog Age:<input type="number" id="dogage">
+
+
+    <button onclick="calculateDogAge()">count Age</button>
+    
+    <h2 id= "theage"></h2>
+    
+    
+    <script> 
+
+   function calculateDogAge() {
+    var year = document.getElementById("dogage").value;
+    var dogYears = 7*year;
+    console.log("Your doggie is " + dogYears + " years old in dog years!");
+    document.getElementById("theage").innerHTML=`Your doggie is  ${dogYears}  years old in dog years!`;
+}
+
+    </script> 
+
+</body>
+
+</html>
