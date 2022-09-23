@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <title>HW3</title>
 <meta charset="UTF-8">
-
+<link rel="stylesheet" href="./css.css">
 <html>
 <header>
-    <h1>homework 3</h1>
 </header>
 <body>
-    <p id="time"></p>
-    <p id="time2">1</p>
+   
+      
+    <div class="timeapi2">
+        <span id="time2"></span>
+    </div>
+ 
+    <!--current time with js method-->
+        <div class="timeapi">
+            <span id="time"></span>
+        </div>
+ 
+    <!--current time manually-->
+    <div id="time">
+        <div class="circle" style="--clr:#ff2972">
+            <div class="dots sec_dots"></div>
+            <svg>
+                <circle cx="120" cy="120" r="120" id="ss"></circle>
+            </svg>
+        </div>
+        <div class="circle" style="--clr:#fee800">
+            <div class="dots min_dots"></div>
+            <svg>
+                <circle cx="100" cy="100" r="100" id="mm"></circle>
+            </svg>
+        </div>
+        <div class="circle" style="--clr:#04fc43">
+            <div class="dots hr_dots"></div>
+            <svg>
+                <circle cx="80" cy="80" r="80" id="hh"></circle>
+            </svg>
+        </div>
+        <div class="timebox">
+            <div id="hours" style="--c:#04fc43;">00</div>
+            <div id="minutes" style="--c:#fee800;">00</div>
+            <div id="secounds" style="--c:#ff2972;">00</div>
+            <div class="ap"><div id="ampm" style="--c:#ffffff;">AM</div></div>
+        </div>
+    </div>
+        
 </body>
 <script src="./jsHW3.js"></script>
 </html>
