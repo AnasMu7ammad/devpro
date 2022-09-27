@@ -11,6 +11,8 @@ function gettime()
    fetch("https://worldtimeapi.org/api/ip")
   .then(response => response.json())
   .then(data => console.log(data.dst,data.datetime));
+
+  return;
    
 }
 document.getElementById("time2").innerHTML = gettime.value;
