@@ -15,7 +15,20 @@ function gettime()
   return;
    
 }
-document.getElementById("time2").innerHTML = gettime.value;
+const random = async() => {
+  response = await  fetch("https://worldtimeapi.org/api/ip")
+  .then(response => response.json())
+  .then(data => console.log(data.dst,data.datetime));
+
+  
+  data = await response.json();
+  //console.log(data);
+  document.getElementById("time2").innerHTML = data;
+  return data;
+};
+
+
+
 
 setInterval(myTimer, 1000);
 
