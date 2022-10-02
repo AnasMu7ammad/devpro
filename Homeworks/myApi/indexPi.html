@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./img/photo.png" />
+    <link rel="stylesheet" href="./cssPi.css">
+    <title>Image API</title>
+
+</head>
+<body>
+    <h1>Random image from unsplash</h1>
+    <div class="imageContainer">
+        <a id="imageLink" href="#">
+            <img alt="" id="unsplashimage"/>
+        </a>
+    </div>
+    <p class="imageDetails"> Photo by <a id="creator" href="#">Name</a> on <a href="https://www.unsplash.com">Unsplash</a></p>
+
+    <button onclick="downloadImage()">download image</button>
+    <a href='URL_HERE' download>Download image</a>
+</body>
+<script src="./jsPi.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js" ></script>
+</html>
