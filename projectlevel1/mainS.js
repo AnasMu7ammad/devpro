@@ -34,7 +34,7 @@ function GetInfo() {
 }
 
 function DefaultScreen() {
-    document.getElementById("cityInput").defaultValue;
+    document.getElementById("cityInput").defaultValue = "صنعاء";
     GetInfo();
 }
 
